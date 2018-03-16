@@ -1,0 +1,8 @@
+{
+  "name": "authAPI",
+  "version": "1.0.0",
+  "description": "signIn page and logIn page",
+  "main": "index.js",
+  "author": "shubham",
+  "license": "MIT"
+}
