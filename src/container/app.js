@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import { postRegisterForm } from './../Api'
 import './auth.css';
+import { History } from './route';
 
 
 class App extends Component {
@@ -20,28 +22,8 @@ class App extends Component {
         this.setState(newState);
     }
     requestToken() {
-        fetch('http://localhost:3000/register',{  //http://192.168.43.178:3000/register
-            method: 'POST',
-            headers: {
-              "Content-type": "application/json",
-            },
-            body: JSON.stringify({
-                email : this.state.email,
-                userName : this.state.displayName,
-                password : this.state.password,
-                name : this.state.Name,
-                mobile : this.state.contectNo
-            })
-        }).then((res) => {
-            return res.json();
-        }).then(
-            (data) => {
-                console.log(data)
-                localStorage.setItem("token", data.token);
-            }
-        ).catch((err) => {
-            console.log(err);
-        })
+        postRegisterForm(this.state);
+        History.push('/user');
 
     }
     render() {
