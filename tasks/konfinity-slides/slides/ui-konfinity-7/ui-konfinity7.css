@@ -1,0 +1,54 @@
+#header{
+    background-color:#333 ;
+    color: white;
+    font-size: 2rem;
+    top: 0;
+  }
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.main-head{
+    grid-column: 1/4;
+}
+
+.main-head h2{
+    color: #4d94d0;
+    padding-left: 3rem;
+    padding-top: 0;
+}
+
+.google-display{
+    grid-column: 1/2;
+    padding-left: 4rem;
+}
+
+.google-display  img{
+    padding-left: 1rem;
+}
+
+.fb-display{
+    grid-column: 2/3;
+    padding-left: 4rem;
+}
+
+.fb-display img{
+    padding-left: 3rem;
+}
+
+.microsoft-dispaly{
+    grid-column: 3/4;
+}
+
+.microsoft-dispaly img{
+    padding-left: 3rem;
+}
+
+.konfinity-logo img{
+    padding-left: 2rem;
+}
+
+

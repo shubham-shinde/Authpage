@@ -1,0 +1,15 @@
+ .page-container{
+    color: white;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.receipt{
+    text-align: center;
+    font-size: 3rem;
+}
+
+input{
+    width: 300px;
+}

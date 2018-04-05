@@ -1,0 +1,28 @@
+#grid-container{
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    background: #cecdcd;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: 1fr 5fr;
+    grid-gap: 2rem;
+    grid-template-areas:
+            'topic'
+            'image';
+}
+
+.topic{
+    grid-area: topic;
+    height: 15vh;
+    grid-area: topic;
+    color: 	#313269;
+    font-size: 3.5rem;
+    padding: 2rem 0 0 2rem;
+}
+
+.image{
+    grid-area: image;
+}

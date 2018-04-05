@@ -1,0 +1,158 @@
+#grid-container{
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    background: #cecdcd;
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    grid-auto-columns: auto;
+    grid-gap: 2rem;
+    grid-template-areas:
+            'topic topic topic'
+            'left-grid vl right-grid';
+    justify-items: center;
+    z-index: -1;
+}
+
+.topic{
+    grid-area: topic;
+    background: #E16460;
+    color: #ffffff;
+    height: 5rem;
+    border: solid 2px #616161;
+    font-size: 3rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+.left{
+    grid-area: left-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+            'front-end front-end'
+            'left-subgrid fe-contents';
+    justify-items: center;
+}
+.left .front-end{
+    height: 3rem;
+    background: #9BC6E8;
+    border: solid 2px #616161;
+    font-size: 1.6rem;
+    justify-self: end;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    padding: 0 3rem;
+    grid-area: front-end;
+}
+.left .left-subgrid{
+    grid-area: left-subgrid; 
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas:
+            'w3c w3c'
+            'lang lang'
+            'angularReact node';
+    justify-items: center;
+}
+.left .fe-contents{
+    grid-area: fe-contents;
+    justify-self: end;
+    font-size: 2.2rem;
+    line-height: 1;
+    margin-right: 5rem;
+    margin-bottom: 15rem;
+}
+.left .w3c{
+    grid-area: w3c; 
+    font-size: 1.6rem;
+    align-self: start;
+}
+.left .lang{
+    background: #7AA3B1;
+    grid-area: lang;
+    font-size: 1.6rem;
+    border: solid 2px #000000;
+    text-align: center;
+    height: 8rem;
+    padding: 2rem 2rem 0 2rem;
+    margin-bottom: 2rem;
+}
+.angular-react{
+    background: #9DC4FC;
+    grid-area: angularReact;
+    height: 4rem;
+    width: 8rem;
+    font-size: 1.5rem;
+    border: solid 1px #616161;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 .1rem;
+    margin-bottom: 11rem;
+    
+}
+.node{
+    background: #DD6965;
+    grid-area: node;
+    height: 2rem;
+    font-size: 1.5rem;
+    border: solid 1px #616161;
+    border-radius: 5px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0 .5rem;
+}
+
+
+.vl{
+    grid-area: vl;
+    height: 75vh;
+    width: 2px;
+    border-left: 2px solid #616161;
+}
+
+.right{
+    grid-area: right-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 2rem;
+    grid-template-areas:
+            'back-end be-lang'
+            'be-contents be-lang';
+}
+.right .back-end{
+    grid-area: back-end;
+    height: 3rem;
+    width: 8rem;
+    background: #9BC6E8;
+    border: solid 2px #616161;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 3rem;
+    margin-top: 2rem;
+}
+
+.right .be-contents{
+    width: 18rem;
+    grid-area: be-contents;
+    font-size: 2.2rem;
+    line-height: 1;
+    margin-bottom: 17rem;
+}
+.right .be-lang{
+    grid-area: be-lang;
+    height: 20rem;
+    width: 12rem;
+    margin-right: 3rem;
+    margin-top: 6rem;
+    background: #C17BA0;
+    border: solid 2px #000000;
+    font-size: 2.2rem;
+    text-align: center;
+}

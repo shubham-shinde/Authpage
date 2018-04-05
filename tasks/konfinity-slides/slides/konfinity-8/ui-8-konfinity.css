@@ -1,0 +1,24 @@
+#header{
+    background-color:#333 ;
+    color: white;
+    font-size: 2rem;
+    top: 0;
+  }
+
+.heading h1{
+    color: #4d94d0;
+    padding-left: 3rem;
+    margin-top: 1px;
+}
+
+.content{
+    padding-left: 4rem;
+}
+
+.content li{
+    padding-top: 1.5rem;
+}
+
+  .konfinity-logo img{
+    padding-left: 2rem;
+}

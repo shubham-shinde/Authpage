@@ -1,0 +1,41 @@
+#header{
+    background-color:#333 ;
+    color: white;
+    font-size: 2rem;
+    top: 0;
+  }
+
+  .heading h1{
+    color: #4d94d0;
+    padding-left: 3rem;
+    margin-top: 12px;
+
+}
+
+.text-heading h3{
+    color: peru;
+    padding-left: 2rem;
+}
+
+.content-grid{
+    border: 1px solid rgb(116, 101, 101);
+    border-radius: 18px;
+    box-sizing: border-box;
+    background-color: rgb(60, 50, 31);
+    width: 20rem;
+    height: 10rem;
+    padding-left: 1rem;
+    padding-top: .5rem;
+}
+  .grid-konfinity{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      padding-left: 2rem;
+      padding-top: 4rem;
+      text-align: left;
+  }
+
+  .konfinity-logo img{
+    padding-left: 2rem;
+    padding-top: 6rem;
+}
