@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ 
+.navbar{
+    width: 100%;
+    height: 11vh;
+    border-bottom: solid 1px #e9eaea;
+}
+.nav_bar{
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'left_nav  . right_nav';
+
+}
+.nav_bar ul{
+    list-style-type: none;
+}
+.nav_bar ul li{
+    float: left;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+.left_nav{
+    grid-area: left_nav;
+    place-self: center;
+}
+.right_nav{
+    grid-area: right_nav;
+    place-self: center;
+}
+
+
+
+.main_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'collage_container form_container';
+
+}
+.collage_container{
+    grid-area: collage_container;
+}
+.collage_container .b_dots{
+    position: absolute;
+    z-index: 20;
+    top: 17%;
+    left: 3%;
+}
+.pink_rec{
+    position: absolute;
+    z-index: -30;
+    width: 17%;
+    top: 17%;
+    left: 27%;
+}
+.b_bars{
+    position: absolute;
+    z-index: -10;
+    width: 13%;
+    top: 30%;
+    left: 13%;
+}
+.title_container{
+    background: #6400e4;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    z-index: 40;
+    position: absolute;
+    width: 38%;
+    height: 37.5%;
+    top: 52%;
+    left: 0%;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.title_container .title{
+    place-self: center;
+    padding-left: 2.5rem;
+
+}
+.learner{
+    position: absolute;
+    z-index: -20;
+    width: 43%;
+    top: 25%;
+    left: 7%;
+}
+.green_tri{
+    position: absolute;
+    z-index: -10;
+    width: 34%;
+    top: 54%;
+    left: 3%;
+}
+
+.form_container{
+    grid-area: form_container;
+    max-width: 33rem;
+    padding-top: 5%;
+    padding-left: 27%; 
+}
+.form_container form label{
+    font-size: 0.9rem !important;
+    display: inline-block;
+    margin-right: 0.4rem;
+    margin-bottom: .5rem;
+}
+.form_container form input{
+    font-size: 1rem;
+    text-indent: 0.8rem;
+    padding: 0.8rem 0;
+    margin-bottom: 1rem;
+    outline: none;
+    width: 100%;
+    border: 1px solid #e9eaea;
+    border-radius: 2px;
+    transition: border-color 0.15s;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+.form_container form input:active{
+    border: 1px solid #6400e4;
+}
+
+.form_container form button{
+    background: #6400e4;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.33333;
+    min-width: 10rem;
+}
+
+.form_container form button:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: #ffffff;
+}
+
